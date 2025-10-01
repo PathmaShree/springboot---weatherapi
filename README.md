@@ -2,24 +2,24 @@
 A Spring Boot RESTful API that fetches real-time weather information from the OpenWeatherMap API, stores search history in a database, and provides CRUD operations for managing weather records.
 
 # FEATURES
--> Fetch current weather for any city using OpenWeatherMap API.
--> Save search history in the database.
--> Retrieve all weather search records or a specific record by ID.
--> Update records fully or partially.
--> Delete weather records by ID.
--> Proper exception handling and validation.
+- Fetch current weather for any city using OpenWeatherMap API.
+- Save search history in the database.
+- Retrieve all weather search records or a specific record by ID.
+- Update records fully or partially.
+- Delete weather records by ID.
+- Proper exception handling and validation.
 
 # TECHNOLOGIES
--> Backend: Spring Boot, Spring Data JPA, RestTemplate
--> Database: MySQL / Oracle (configurable)
--> API Integration: OpenWeatherMap API
--> Tools: Postman for API testing, Maven for build management
+- Backend: Spring Boot, Spring Data JPA, RestTemplate
+- Database: MySQL / Oracle (configurable)
+- API Integration: OpenWeatherMap API
+- Tools: Postman for API testing, Maven for build management
 
 # PREREQUISITES
--> Java 17 or higher
--> Maven
--> OpenWeatherMap API key
--> IDE (Eclipse, IntelliJ IDEA, VS Code)
+- Java 17 or higher
+- Maven
+- OpenWeatherMap API key
+- IDE (Eclipse, IntelliJ IDEA, VS Code)
 
 # SET UP
 # Clone the repository
@@ -27,7 +27,8 @@ A Spring Boot RESTful API that fetches real-time weather information from the Op
 git clone https://github.com/username/SpringBoot-WeatherAPI.git
 cd SpringBoot-WeatherAPI
 
--> Configure application.properties
+# Configure application.properties
+
 # H2 Database
 spring.datasource.url=jdbc:h2:mem:testdb
 spring.datasource.driverClassName=org.h2.Driver
@@ -36,10 +37,12 @@ spring.datasource.password=
 spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
 spring.jpa.hibernate.ddl-auto=update
 
-->Weather API Key
+Weather API Key    
+
 weather.api.key=YOUR_OPENWEATHERMAP_API_KEY
 
-->H2 Console (Optional)
+H2 Console (Optional)  
+
 spring.h2.console.enabled=true
 spring.h2.console.path=/h2-console
 
@@ -52,7 +55,8 @@ spring.datasource.password=YOUR_ORACLE_PASSWORD
 spring.jpa.database-platform=org.hibernate.dialect.Oracle10gDialect
 spring.jpa.hibernate.ddl-auto=update
 
--> Weather API Key
+Weather API Key  
+
 weather.api.key=YOUR_OPENWEATHERMAP_API_KEY
 
 
@@ -64,7 +68,8 @@ spring.datasource.password=YOUR_MYSQL_PASSWORD
 spring.jpa.database-platform=org.hibernate.dialect.MySQL8Dialect
 spring.jpa.hibernate.ddl-auto=update
 
--> Weather API Key
+Weather API Key  
+
 weather.api.key=YOUR_OPENWEATHERMAP_API_KEY
 
 
@@ -72,7 +77,6 @@ weather.api.key=YOUR_OPENWEATHERMAP_API_KEY
 mvn spring-boot:run
 
 # API Endpoints
-## API Endpoints
 
 | Method | Endpoint             | Description                                | Request Body                  | Response                        |
 |--------|--------------------|--------------------------------------------|-------------------------------|---------------------------------|
@@ -87,10 +91,10 @@ mvn spring-boot:run
 
 # SAMPLE REQUEST
 
--> Fetch Weather for London
+- Fetch Weather for London  
 GET http://localhost:8083/weatherapi/fetch?city=London
 
--> Response
+- Response  
 {
   "id": 2,
   "cityName": "London",
