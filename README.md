@@ -103,3 +103,6 @@ GET http://localhost:8080/weatherapi/fetch?city=London
   "searchedAt": "2025-10-01T17:14:39.812"  
 }
 
+# WEATHER API  
+
+https://openweathermap.org/api
