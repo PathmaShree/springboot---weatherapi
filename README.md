@@ -95,11 +95,11 @@ mvn spring-boot:run
 GET http://localhost:8080/weatherapi/fetch?city=London
 
 - Response  
-{
-  "id": 2,
-  "cityName": "London",
-  "temperature": "16.34°C",
-  "weatherDesc": "light rain",
-  "searchedAt": "2025-10-01T17:14:39.812"
+{  
+  "id": 2,  
+  "cityName": "London",  
+  "temperature": "16.34°C",  
+  "weatherDesc": "light rain",  
+  "searchedAt": "2025-10-01T17:14:39.812"  
 }
 
