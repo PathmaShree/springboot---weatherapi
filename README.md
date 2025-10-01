@@ -37,11 +37,11 @@ spring.datasource.password=
 spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
 spring.jpa.hibernate.ddl-auto=update
 
-Weather API Key    
+### Weather API Key    
 
 weather.api.key=YOUR_OPENWEATHERMAP_API_KEY
 
-H2 Console (Optional)  
+### H2 Console (Optional)  
 
 spring.h2.console.enabled=true
 spring.h2.console.path=/h2-console
@@ -55,7 +55,7 @@ spring.datasource.password=YOUR_ORACLE_PASSWORD
 spring.jpa.database-platform=org.hibernate.dialect.Oracle10gDialect
 spring.jpa.hibernate.ddl-auto=update
 
-Weather API Key  
+### Weather API Key  
 
 weather.api.key=YOUR_OPENWEATHERMAP_API_KEY
 
@@ -68,7 +68,7 @@ spring.datasource.password=YOUR_MYSQL_PASSWORD
 spring.jpa.database-platform=org.hibernate.dialect.MySQL8Dialect
 spring.jpa.hibernate.ddl-auto=update
 
-Weather API Key  
+### Weather API Key  
 
 weather.api.key=YOUR_OPENWEATHERMAP_API_KEY
 
