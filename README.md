@@ -24,7 +24,7 @@ A Spring Boot RESTful API that fetches real-time weather information from the Op
 # SET UP
 # Clone the repository
 
-git clone https://github.com/username/SpringBoot-WeatherAPI.git
+git clone https://github.com/PathmaShree/SpringBoot-WeatherAPI.git  
 cd SpringBoot-WeatherAPI
 
 # Configure application.properties
