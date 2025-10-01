@@ -30,12 +30,12 @@ cd SpringBoot-WeatherAPI
 # Configure application.properties
 
 # H2 Database
-spring.datasource.url=jdbc:h2:mem:testdb
-spring.datasource.driverClassName=org.h2.Driver
-spring.datasource.username= sa
-spring.datasource.password=
-spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
-spring.jpa.hibernate.ddl-auto=update
+spring.datasource.url=jdbc:h2:mem:testdb  
+spring.datasource.driverClassName=org.h2.Driver  
+spring.datasource.username= sa  
+spring.datasource.password=  
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect  
+spring.jpa.hibernate.ddl-auto=update  
 
 ### Weather API Key    
 
@@ -43,17 +43,17 @@ weather.api.key=YOUR_OPENWEATHERMAP_API_KEY
 
 ### H2 Console (Optional)  
 
-spring.h2.console.enabled=true
+spring.h2.console.enabled=true  
 spring.h2.console.path=/h2-console
 
 
 # Oracle Database
-spring.datasource.url=jdbc:oracle:thin:@localhost:1521:XE
-spring.datasource.driverClassName=oracle.jdbc.OracleDriver
-spring.datasource.username=YOUR_ORACLE_USERNAME
-spring.datasource.password=YOUR_ORACLE_PASSWORD
-spring.jpa.database-platform=org.hibernate.dialect.Oracle10gDialect
-spring.jpa.hibernate.ddl-auto=update
+spring.datasource.url=jdbc:oracle:thin:@localhost:1521:XE  
+spring.datasource.driverClassName=oracle.jdbc.OracleDriver  
+spring.datasource.username=YOUR_ORACLE_USERNAME  
+spring.datasource.password=YOUR_ORACLE_PASSWORD  
+spring.jpa.database-platform=org.hibernate.dialect.Oracle10gDialect  
+spring.jpa.hibernate.ddl-auto=update  
 
 ### Weather API Key  
 
@@ -61,12 +61,12 @@ weather.api.key=YOUR_OPENWEATHERMAP_API_KEY
 
 
 # MySQL Database
-spring.datasource.url=jdbc:mysql://localhost:3306/weatherdb?useSSL=false&serverTimezone=UTC
-spring.datasource.driverClassName=com.mysql.cj.jdbc.Driver
-spring.datasource.username=YOUR_MYSQL_USERNAME
-spring.datasource.password=YOUR_MYSQL_PASSWORD
-spring.jpa.database-platform=org.hibernate.dialect.MySQL8Dialect
-spring.jpa.hibernate.ddl-auto=update
+spring.datasource.url=jdbc:mysql://localhost:3306/weatherdb?useSSL=false&serverTimezone=UTC  
+spring.datasource.driverClassName=com.mysql.cj.jdbc.Driver  
+spring.datasource.username=YOUR_MYSQL_USERNAME  
+spring.datasource.password=YOUR_MYSQL_PASSWORD  
+spring.jpa.database-platform=org.hibernate.dialect.MySQL8Dialect  
+spring.jpa.hibernate.ddl-auto=update  
 
 ### Weather API Key  
 
