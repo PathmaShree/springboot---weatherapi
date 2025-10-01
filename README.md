@@ -72,13 +72,17 @@ weather.api.key=YOUR_OPENWEATHERMAP_API_KEY
 mvn spring-boot:run
 
 # API Endpoints
-# Method	           Endpoint	                  Description                               	      Request Body	                      Response
- GET          	/fetch?city={city}	    Fetch current weather for a city and save history	                N/A	                     WeatherSearchHistory JSON
- GET	          /getOne/{id}	          Get weather history by ID                                       	N/A	                     WeatherSearchHistory JSON
- GET          	/all	                  Get all weather history	                                          N/A	                     List of WeatherSearchHistory
- PUT         	  /update/{id}	          Update entire weather record by ID	                      WeatherSearchHistory JSON	       Updated record JSON
- PATCH	        /partialUpdate/{id}	    Partial update of weather record	                        JSON with fields to update	     Updated record JSON
- DELETE       	/delete/{id}	          Delete weather record by ID                              	N/A	                             Success message
+## API Endpoints
+
+| Method | Endpoint             | Description                                | Request Body                  | Response                        |
+|--------|--------------------|--------------------------------------------|-------------------------------|---------------------------------|
+| GET    | `/fetch?city={city}` | Fetch current weather for a city and save history | N/A                           | WeatherSearchHistory JSON       |
+| GET    | `/id/{id}`          | Get weather history by ID                  | N/A                           | WeatherSearchHistory JSON       |
+| GET    | `/all`              | Get all weather history                     | N/A                           | List of WeatherSearchHistory    |
+| PUT    | `/{id}`             | Update entire weather record by ID         | WeatherSearchHistory JSON     | Updated record JSON             |
+| PATCH  | `/{id}`             | Partial update of weather record           | JSON with fields to update    | Updated record JSON             |
+| DELETE | `/{id}`             | Delete weather record by ID                 | N/A                           | Success message                 |
+
 
 
 # SAMPLE REQUEST
