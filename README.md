@@ -92,7 +92,7 @@ mvn spring-boot:run
 # SAMPLE REQUEST
 
 - Fetch Weather for London  
-GET http://localhost:8083/weatherapi/fetch?city=London
+GET http://localhost:8080/weatherapi/fetch?city=London
 
 - Response  
 {
