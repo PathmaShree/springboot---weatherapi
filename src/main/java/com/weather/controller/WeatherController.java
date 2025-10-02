@@ -62,17 +62,7 @@ public class WeatherController {
     	}
     }
     
-//    @GetMapping("/all")
-//    public ResponseEntity<?> getAll(){
-//    	try {
-//    	List<WeatherSearchHistory> allWeather = i.getAllWeather();
-//    	return new ResponseEntity<List<WeatherSearchHistory>>(allWeather,HttpStatus.OK);
-//    }
-//    	catch(Exception e) {
-//    		return new ResponseEntity<>(e.getMessage(),HttpStatus.BAD_REQUEST);
-//    		
-//    	}
-//    }
+
     
     @PutMapping("/update/{id}")
     public ResponseEntity<?> updateAll(@PathVariable Long id,@RequestBody WeatherSearchHistory entity){
